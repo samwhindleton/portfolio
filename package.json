@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "I'm a Full Stack Web Developer and busy bee that loves creating scripts that complete multiple tasks in less time than it takes to take a sip of coffee. Constantly looking for efficient ways to solve problems, and opportunities to learn and grow. Let's ./start.sh something new.",
+  "main": "index.js",
+  "scripts": {
+    "build": "next build",
+    "dev": "next",
+    "export": "next export",
+    "start": "next start -p $PORT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samwhindleton/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samwhindleton/portfolio/issues"
+  },
+  "homepage": "https://github.com/samwhindleton/portfolio#readme",
+  "dependencies": {
+    "@zeit/next-css": "^0.1.5",
+    "next": "^6.0.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
