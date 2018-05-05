@@ -9,7 +9,7 @@ const Layout = (props) => (
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
       {/* character encoding */}
-      <meta charset="utf-8"/>
+      <meta charSet="utf-8"/>
       {/* viewport for page dimensions and scaling */}
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       {/* author */}
@@ -25,7 +25,7 @@ const Layout = (props) => (
       {/* main css */}
       <link rel="stylesheet" href="/_next/static/style.css"/>
       {/* font awesome */}
-      <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
+      <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossOrigin="anonymous"></script>
     </Head>
     <Navbar/>
     <div className="main-container">
