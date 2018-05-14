@@ -1,32 +1,51 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 fonts
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@import url('');
+
+@import url('https://fonts.googleapis.com/css?family=Poppins|Raleway');
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-bulma css framework
+css framework
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css');
+
+/* normalize --- https://github.com/necolas/normalize.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css');
+
+/* bulma --- https://github.com/jgthms/bulma */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css'); */
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 color palette
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 :root {
-  --foobar: #35f2e1;
+  --night: #232122;
+  --fade: #3d3b3c;
+  --energy: #0ae2cd;
+  --emerald: #07ef87;
+  --neon: #fe1476;
+  --lamp: #f4edf0;
 }
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 main style
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 html {
   height: 100%;
+  width: 100%;
   overflow-x: hidden;
 }
 
 body {
+  color: var(--night);
+  font-family: 'Poppins', sans-serif;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
@@ -37,7 +56,285 @@ body {
   word-wrap: break-word;
 }
 
-h1 {
-  color: var(--foobar);
-  font-size: 3em;
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--lamp);
+  text-decoration: none;
 }
+
+a:hover {
+  color: var(--energy);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+navbar style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.navbar {
+  height: 5em;
+  background: var(--night);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li a {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+about style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.about {
+  background: linear-gradient(var(--emerald), var(--energy));
+  min-height: calc(100vh - 21em);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.about p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.7em;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+contact style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.contact {
+  background: linear-gradient(var(--emerald), var(--energy));
+  min-height: calc(100vh - 21em);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.7em;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+index style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.index {
+  background: linear-gradient(var(--emerald), var(--energy));
+  min-height: calc(100vh - 21em);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.index h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.96em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+portfolio style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.portfolio {
+  background: var(--lamp);
+  min-height: calc(100vh - 21em);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.7em;
+}
+
+.portfolio .main-row {
+  /* border: 1px solid purple; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio .main-row .row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 66vw;
+}
+
+.project-1,
+.project-2,
+.project-3,
+.project-4,
+.project-5 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 5em;
+}
+
+.project-1,
+.project-2 {
+  height: 21vh;
+  width: 33vw;
+}
+
+.project-1 {
+  background: var(--fade);
+  color: var(--lamp);
+}
+
+.project-2 {
+  background: var(--lamp);
+  color: var(--night);
+}
+
+.project-3 {
+  height: 42vh;
+  width: 33vw;
+  background: var(--emerald);
+  color: var(--night);
+}
+
+.project-4 {
+  height: 21vh;
+  width: 66vw;
+  background: var(--energy);
+  color: var(--night);
+}
+
+.project-5 {
+  height: 63vh;
+  width: 33vw;
+  background: var(--neon);
+  color: var(--lamp);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+resume style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.resume {
+  background: var(--lamp);
+  min-height: calc(100vh - 21em);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.resume p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.7em;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+footer style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.footer {
+  height: 16em;
+  color: var(--lamp);
+  background: var(--night);
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-media {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  font-size: 2.7em;
+}
+
+.copy {
+  margin: 2.7em 0 0;
+  text-align: center;
+  width: 60%;
+}
+
+.copy a {
+  color: var(--energy);
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+media queries style
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* mobile */
+@media screen and (min-width: 480px) {}
+
+/* tablet */
+@media screen and (min-width: 769px) {}
+
+/* desktop */
+@media screen and (min-width: 1088px) {}
+
+/* widescreen */
+@media screen and (min-width: 1280px) {}
+
+/* full hd */
+@media screen and (min-width: 1472px) {}
