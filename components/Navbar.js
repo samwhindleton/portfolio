@@ -1,7 +1,9 @@
+// next
 import Link from 'next/link';
 
+
 const Navbar = () => (
-  <div>
+  <div className='navbar'>
     <ul>
       <li>
         <Link href="/">
