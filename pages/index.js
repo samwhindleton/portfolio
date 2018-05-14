@@ -1,9 +1,12 @@
+// components
 import Layout from '../components/Layout';
+
 
 const Index = () => (
   <Layout>
-    <div>
-      <h1>Home page.</h1>
+    <div className='index'>
+      <h1>sam whindleton</h1>
+      <h2>full stack web developer</h2>
     </div>
   </Layout>
 );
