@@ -26,9 +26,9 @@ Thanks Friend! 🤓
 
 ### Technologies Used
 
-HTML  
-CSS  
-JS/JQuery
+* [NodeJS](https://nodejs.org/)  
+* [NextJS](https://nextjs.org/)  
+* [ReactJS](https://reactjs.org/)
 
 ### Wireframe
 
